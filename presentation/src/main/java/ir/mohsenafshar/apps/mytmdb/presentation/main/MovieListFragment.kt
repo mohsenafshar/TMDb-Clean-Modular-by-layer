@@ -5,20 +5,15 @@ import android.os.Bundle
 import android.util.Log
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import ir.mohsenafshar.apps.mytmdb.presentation.base.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
-import ir.mohsenafshar.apps.mytmdb.domain.interactor.GetMovieListUseCase
 import ir.mohsenafshar.apps.mytmdb.presentation.R
+import ir.mohsenafshar.apps.mytmdb.presentation.base.BaseFragment
 import ir.mohsenafshar.apps.mytmdb.presentation.databinding.FragmentMovieListBinding
-import kotlinx.coroutines.launch
 import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.*
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MovieListFragment : BaseFragment<FragmentMovieListBinding>() {

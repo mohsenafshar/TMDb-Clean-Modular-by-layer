@@ -1,18 +1,20 @@
-package ir.mohsenafshar.apps.mytmdb.domain.model
+package ir.mohsenafshar.apps.mytmdb.data.local.entity
 
-import com.google.gson.annotations.SerializedName
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
+@Entity(tableName = "movie_item")
 data class MovieItem(
+    @PrimaryKey
     val id: Long,
     val adult: Boolean?,
     val backdrop_path: String?,
-    val genre_ids: List<Long>?,
+    val genres: List<Long>?,
     val original_language: String?,
     val original_title: String?,
     val overview: String,
     val popularity: Double?,
     val poster_path: String?,
-    @SerializedName("release_date")
     val releaseDate: String,
     val title: String,
     val video: Boolean?,

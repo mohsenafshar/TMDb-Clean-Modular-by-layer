@@ -19,4 +19,8 @@ class RemoteMovieDataSource @Inject constructor(private val movieApi: MovieApi):
     override suspend fun getDetail(id: Long): MovieDetail {
         return movieApi.getDetail(id)
     }
+
+    override suspend fun saveAll(movieList: List<MovieItem>) {
+        TODO("Not yet implemented")
+    }
 }

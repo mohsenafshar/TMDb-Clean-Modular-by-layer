@@ -44,4 +44,10 @@ dependencies {
 
     //dagger hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
+
+    // timber
+    // https://github.com/JakeWharton/timber
+    api "com.jakewharton.timber:timber:4.7.1"
+
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
 }

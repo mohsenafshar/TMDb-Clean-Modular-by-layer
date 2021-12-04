@@ -8,4 +8,5 @@ interface IMovieDataSource {
     suspend fun getMovieList(params: GetMovieListUseCase.Params): List<MovieItem>
     suspend fun getTopRated(pageNo: Int): List<MovieItem>
     suspend fun getDetail(id: Long): MovieDetail
+    suspend fun saveAll(movieList: List<MovieItem>)
 }
