@@ -6,7 +6,7 @@ import ir.mohsenafshar.apps.mytmdb.domain.interactor.GetMovieListUseCase
 import kotlinx.coroutines.flow.Flow
 
 interface IMovieRepository {
-    suspend fun getMovieList(params: GetMovieListUseCase.Params): Flow<Result<List<MovieItem>>>
-    suspend fun getTopRated(pageNo: Int): Result<List<MovieItem>>
+    suspend fun getMovieList(params: GetMovieListUseCase.Params): kotlinx.coroutines.flow.Flow<Result<List<MovieItem>>>
+    suspend fun getTopRated(pageNo: Int): kotlinx.coroutines.flow.Flow<Result<List<MovieItem>>>
     suspend fun getDetail(id: Long): Result<MovieDetail>
 }

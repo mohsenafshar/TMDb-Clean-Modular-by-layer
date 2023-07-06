@@ -2,6 +2,7 @@ package ir.mohsenafshar.apps.mytmdb.data.local
 
 import androidx.room.Dao
 import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import ir.mohsenafshar.apps.mytmdb.data.local.entity.MovieItem
 import kotlinx.coroutines.flow.Flow
@@ -15,7 +16,7 @@ interface MovieDao {
 //    suspend fun getTopRated(pageNo: Int): List<MovieItem>
 //    suspend fun getDetail(id: Long): MovieDetail
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(vararg movies: MovieItem)
 
 }
