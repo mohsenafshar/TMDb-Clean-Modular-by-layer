@@ -13,4 +13,14 @@
     <string name="err_unknown_host">آدرس سرور معتبر نیست.</string>
     <string name="err_ssl_handshake">مشکلی در ssl بوجود آمده است.</string>
     <string name="err_no_internet">عدم دسترسی به اینترنت</string>
+    <string name="title_activity_main_compose">MainComposeActivity</string>
+    <string name="placeholder_search_movie">Search movie</string>
+    <string name="scroll_up">scroll to top</string>
+    <string name="popular_movies">popular</string>
+    <string name="top_rated_movies">"top rated"</string>
+    <string name="upcoming_movies">upcoming</string>
+    <string name="bottom_navigation_home">home</string>
+    <string name="bottom_navigation_profile">profile</string>
+    <string name="bottom_navigation_search">search</string>
+    <string name="bottom_navigation_bookmark">bookmark</string>
 </resources>

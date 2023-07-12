@@ -11,7 +11,7 @@ import javax.inject.Inject
 
 class RemoteMovieDataSource @Inject constructor(private val movieApi: MovieApi): IMovieDataSource {
     override suspend fun getMovieList(params: GetMovieListUseCase.Params): Flow<List<MovieItem>> {
-        return flow { emit(movieApi.discoverLatestMovies(params.pageNo, params.dateFilter).movieList) }
+        return flow { emit(movieApi.popularMovies(params.pageNo).movieList) }
     }
 
     override suspend fun getTopRated(pageNo: Int): Flow<List<MovieItem>> {

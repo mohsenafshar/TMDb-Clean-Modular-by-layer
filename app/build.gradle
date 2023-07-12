@@ -1,8 +1,11 @@
 plugins {
     id 'com.android.application'
-    id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+
+    id 'org.jetbrains.kotlin.android'
+    // it does same as the above line so TODO
+    id 'kotlin-android'
 }
 
 android {
